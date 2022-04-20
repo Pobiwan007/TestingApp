@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_navigation"
+    app:startDestination="@id/currency_page_item">
+
+    <fragment
+        android:id="@+id/currency_page_item"
+        android:name="com.example.testingapp.fragments.CurrencyFragment"
+        android:label="fragment_currency"
+        tools:layout="@layout/fragment_currency" >
+        <action
+            android:id="@+id/action_currencyFragment_to_favoriteFragment"
+            app:destination="@id/favorite_page_item" />
+        <action
+            android:id="@+id/action_currencyFragment_to_sortPageFragment"
+            app:destination="@id/sortPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favorite_page_item"
+        android:name="com.example.testingapp.fragments.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_currencyFragment"
+            app:destination="@id/currency_page_item" />
+    </fragment>
+    <fragment
+        android:id="@+id/sortPageFragment"
+        android:name="com.example.testingapp.fragments.SortPageFragment"
+        android:label="fragment_sort_page"
+        tools:layout="@layout/fragment_sort_page" >
+        <action
+            android:id="@+id/action_sortPageFragment_to_currencyFragment"
+            app:destination="@id/currency_page_item" />
+        <action
+            android:id="@+id/action_sortPageFragment_to_favoriteFragment"
+            app:destination="@id/favorite_page_item" />
+    </fragment>
+</navigation>

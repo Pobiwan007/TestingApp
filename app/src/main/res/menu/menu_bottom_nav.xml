@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/currency_page_item"
+            android:title="@string/currencies"
+            android:icon="@drawable/ic_baseline_currency_bitcoin_24"
+            />
+        <item
+            android:id="@+id/favorite_page_item"
+            android:title="@string/favorite_list"
+            android:icon="@drawable/ic_baseline_star_24"
+            />
+    </group>
+</menu>
