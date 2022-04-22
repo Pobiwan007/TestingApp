@@ -6,4 +6,5 @@ import javax.inject.Inject
 
 class CurrencyRepository @Inject constructor(private val common: API)  {
     suspend fun getCurrencyAsync() = common.getCurrency()
+    suspend fun getCurrencyAsyncBased(currency: String) = common.getBasedCurrency(currency)
 }

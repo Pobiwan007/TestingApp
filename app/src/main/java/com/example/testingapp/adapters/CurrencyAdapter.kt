@@ -1,4 +1,4 @@
-package com.example.testingapp.util
+package com.example.testingapp.adapters
 
 import android.content.Context
 import android.view.LayoutInflater

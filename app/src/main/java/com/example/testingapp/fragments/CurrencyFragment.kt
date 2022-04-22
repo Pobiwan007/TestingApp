@@ -11,8 +11,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.testingapp.R
-import com.example.testingapp.util.CurrencyAdapter
-import com.example.testingapp.util.OnCurrencyItemClickListener
+import com.example.testingapp.adapters.CurrencyAdapter
+import com.example.testingapp.adapters.OnCurrencyItemClickListener
 import com.example.testingapp.appComponent
 import com.example.testingapp.databinding.FragmentCurrencyBinding
 import com.example.testingapp.entities.Rate
